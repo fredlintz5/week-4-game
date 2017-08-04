@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	width: 85%;
+	margin: auto;
+}
+
+#main_content {
+	height: 800px;
+    background-image: url(../images/x_wing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#header {
+	text-align: center;
+	padding-top: 5px;
+	color: #fff;
+	text-shadow: 1px 1px #333;
+}
+
+#characters {
+	overflow: auto;
+}
+
+#characters div {
+	text-align: center;
+	width: 20%;
+    margin-left: 4%;
+    float: left;
+    border: 1px solid #333;
+    background-color: rgba(255,255,255,.5);
+    padding: 10px 5px 5px 5px;
+}
+
+#characters img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 90%;
+}
+
+#yourCharacter {
+	text-align: center;
+	padding-top: 5px;
+	color: #fff;
+	text-shadow: 2px 2px #333;
+	overflow: auto;
+}
+
+
+
+
+
+
