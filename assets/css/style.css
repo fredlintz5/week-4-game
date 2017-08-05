@@ -4,50 +4,94 @@
 body {
 	width: 85%;
 	margin: auto;
+	background: #333;
+}
+
+hr {
+	margin: 0px 4% 0px 4%;
+}
+
+h1, h4 {
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px #333;
 }
 
 #main_content {
-	height: 800px;
+	margin: 5% 0 5% 0;
+	height: auto;
+    padding-bottom: 50px;
+    border: 1px solid #fff;
+    border-radius: 5px;
     background-image: url(../images/x_wing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#header {
-	text-align: center;
+header {
 	padding-top: 5px;
-	color: #fff;
-	text-shadow: 1px 1px #333;
 }
 
-#characters {
+#choose {
 	overflow: auto;
+	margin-bottom: 20px;
+	display: inherit;
 }
 
-#characters div {
+#choose div {
 	text-align: center;
 	width: 20%;
     margin-left: 4%;
     float: left;
+    border-radius: 5px;
     border: 1px solid #333;
     background-color: rgba(255,255,255,.5);
-    padding: 10px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
 }
 
-#characters img {
+#choose img {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	width: 90%;
+	border-radius: 5px;
 }
 
-#yourCharacter {
-	text-align: center;
-	padding-top: 5px;
-	color: #fff;
-	text-shadow: 2px 2px #333;
+#battleground {
 	overflow: auto;
+	margin-bottom: 20px;
+	display: none;
 }
+
+#battleground div {
+	text-align: center;
+	width: 20%;
+    margin-left: 10%;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: rgba(255,255,255,.5);
+    padding: 5px 5px 5px 5px;
+}
+
+#battleground img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 90%;
+	border-radius: 5px;
+}
+
+#battleground #button {
+	margin-top: 13%;
+	cursor: pointer;
+}
+
+#battleground #button:hover {
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+
 
 
 
