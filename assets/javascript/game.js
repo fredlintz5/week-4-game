@@ -14,6 +14,7 @@ $(document).ready(function() {
 	characterSelect(obi, "Good Obi");
 	characterSelect(maul, "Good Maul");
 	
+	
 
 	// Magical Function Below...
 
@@ -24,7 +25,7 @@ $(document).ready(function() {
 				selectedCharacter = name;
 			}
 
-			$("#choose h4").html("Choose your Opponent");
+			$("#choose h2").html("Choose your Opponent");
 			$("#choose div").css("margin-left", "10%");
 			$("#battleground").append(id);
 			opponentSelect(luke, "Evil Luke");
@@ -61,6 +62,19 @@ $(document).ready(function() {
 
 
 });
+
+
+// <div id="obi">
+// 	<span class="name">Obi Wan</span>
+// 	<img src="assets/images/obi.png">
+// 	<span class="points">120</span>
+// </div>
+
+
+
+
+
+
 
 
 
