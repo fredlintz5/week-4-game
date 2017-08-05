@@ -6,25 +6,16 @@ $(document).ready(function() {
 	var maul = $("#maul");
 	var selectedCharacter;
 	var selectedOpponent;
-	var fight = false;
 
 
 
-	switch (fight) {
-		case true: 
-			console.log("fight must be True");
-		break;
+	characterSelect(luke, "Good Luke");
+	characterSelect(sid, "Good Sidious");
+	characterSelect(obi, "Good Obi");
+	characterSelect(maul, "Good Maul");
+	
 
-		default: 
-			characterSelect(luke, "Good Luke");
-			characterSelect(sid, "Good Sidious");
-			characterSelect(obi, "Good Obi");
-			characterSelect(maul, "Good Maul");
-	} 
-	 
-
-
-
+	// Magical Function Below...
 
 	function characterSelect(id, name) {
 		id.click(function() {
@@ -35,9 +26,7 @@ $(document).ready(function() {
 
 			$("#choose h4").html("Choose your Opponent");
 			$("#choose div").css("margin-left", "10%");
-			// obi.remove();
 			$("#battleground").append(id);
-
 			opponentSelect(luke, "Evil Luke");
 			opponentSelect(sid, "Evil Sidious");
 			opponentSelect(obi, "Evil Obi");
@@ -45,6 +34,7 @@ $(document).ready(function() {
 		});
 	}
 
+	// Magical Function Below...
 
 	function opponentSelect(id, name) {
 		id.click(function() {
@@ -54,14 +44,18 @@ $(document).ready(function() {
 			$("#battleground div").css("margin-left", "10%");
 			$("#battleground").append("<div id='button'>Attack</div");
 			$("#battleground").append(id);
-			fight = true;
-			console.log(selectedCharacter);
-			console.log(selectedOpponent);
-			console.log(fight);
+			removeClickHandler(obi);
+			removeClickHandler(luke);
+			removeClickHandler(sid);
+			removeClickHandler(maul);
 		});
 	}
 
+	// Magical Function Below...
 
+	function removeClickHandler(id) {
+		id.prop('onclick',null).off('click');
+	}
 
 
 
