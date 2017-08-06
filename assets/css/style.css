@@ -17,6 +17,11 @@ h1, h2 {
 	text-shadow: 1px 1px #333;
 }
 
+span {
+	font-size: .8em;
+	
+}
+
 #main_content {
 	margin: 5% 0 5% 0;
 	height: auto;
